@@ -1,0 +1,35 @@
+//HEADER
+
+.section-header {
+  
+}
+
+@include mq($breakpoints-mq--1200) {
+    .section-header {
+       
+    }
+}
+
+@include mq($breakpoints-mq--1024) {
+    .section-header {
+
+    }
+}
+
+@include mq($breakpoints-mq--960) {
+    .section-header {
+
+    }
+}
+
+@include mq($breakpoints-mq--768) {
+    .section-header {
+
+    }
+}
+
+@include mq($breakpoints-mq--480) {
+    .section-header {
+
+    }
+}

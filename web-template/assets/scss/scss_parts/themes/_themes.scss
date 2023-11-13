@@ -1,0 +1,69 @@
+.theme--light {
+    --icon-color: #{$black--1};
+    --text-color: #{$black--1};
+    --line-color: #{$grey--lines};
+    --accent-color: #{$gold--1};
+    --error-color: #{$red--error};
+    --section-color: #{$purewhite};
+    --background-color: #{$greyblue};
+    // hover colors
+    --highlight-color: #{$blue--1};
+    --highlightsub-color: #{$blue--2};
+    --hover-text-color: #{$greyblue};
+    --hover-background-color: #{$black--1};
+
+    &.navbar--transparent {
+        --line-color: #{$black--1};
+        --accent-color: #{$gold--1};
+        --error-color: #{$red--error};
+        --section-color: #{$purewhite};
+        --background-color: #{$greyblue};
+        // hover colors
+        --highlight-color: #{$blue--1};
+        --highlightsub-color: #{$blue--2};
+        --hover-text-color: #{$greyblue};
+        --hover-background-color: #{$black--1};
+    }
+}
+
+.theme--dark {
+    --icon-color: #{$greyblue};
+    --text-color: #{$greyblue};
+    --line-color: #{$grey--lines};
+    --accent-color: #{$gold--1};
+    --error-color: #{$red--error};
+    --section-color: #{$black--1};
+    --background-color: #{$black--1};
+    // hover colors
+    --highlight-color: #{$blue--1};
+    --highlightsub-color: #{$blue--2};
+    --hover-text-color: #{$black--1};
+    --hover-background-color: #{$greyblue};
+
+    &.navbar--transparent {
+        ---icon-color: #{$greyblue};
+        --text-color: #{$greyblue};
+        --line-color: #{$greyblue};
+        --accent-color: #{$gold--1};
+        --error-color: #{$red--error};
+        --section-color: #{$black--1};
+        --background-color: #{$black--1};
+        // hover colors
+        --highlight-color: #{$blue--1};
+        --highlightsub-color: #{$blue--2};
+        --hover-text-color: #{$black--1};
+        --hover-background-color: #{$greyblue};
+    }
+}
+
+$icon-color: var(--icon-color);
+$text-color: var(--text-color);
+$line-color: var(--line-color);
+$accent-color: var(--accent-color);
+$error-color: var(--error-color);
+$section-color: var(--section-color);
+$background-color: var(--background-color);
+$highlight-color: var(--highlight-color);
+$highlightsub-color: var(--highlightsub-color);
+$hover-text-color: var(--hover-text-color);
+$hover-background-color: var(--hover-background-color);

@@ -1,0 +1,29 @@
+$default-font: sans-serif;
+$font-path: "/assets/fonts/";
+$font-files:
+    "FuturaExtraBold",
+    "FuturaBold",
+    "FuturaHeavy",
+    "FuturaMedium",
+    "FuturaBook",
+    "FuturaDemi",
+    "FuturaLight";
+
+// **** FUTURA FONT ****
+@each $file in $font-files {
+  @font-face {
+    font-family: #{$file};
+    src: url("#{$font-path}#{$file}.woff") format("woff"),
+         url("#{$font-path}#{$file}.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+$futura: 'FuturaBook', $default-font;
+$futuraExtraBold: 'FuturaExtraBold', $default-font;
+$futuraBold: 'FuturaBold', $default-font;
+$futuraHeavy: 'FuturaHeavy', $default-font;
+$futuraMedium: 'FuturaMedium', $default-font;
+$futuraDemi: 'FuturaDemi', $default-font;
+$futuraLight: 'FuturaLight', $default-font;

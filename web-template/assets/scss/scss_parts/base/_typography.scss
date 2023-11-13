@@ -1,0 +1,93 @@
+body {}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+h1.item-none {
+  display: none;
+}
+
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin h1($color: $text-color, $fontSize: 110px, $fontFamily: $futuraBold, $lineHeight: 102px, $textTransform: uppercase, $fontWeight: 700) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  text-transform: $textTransform;
+  color: $color;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+}
+
+@mixin h2($color: $text-color, $fontSize: 48px, $fontFamily: $futuraBold, $lineHeight: 56px, $fontWeight: 700) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $color;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+}
+
+@mixin p($color: $text-color, $fontSize: 16px, $fontFamily: $futura, $lineHeight: 24px, $fontWeight: 400) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $color;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+}
+
+.futura-h1 {
+  @include h1;
+}
+
+.futura-h1--small {
+  @include h1($fontSize: 70px, $lineHeight: 1, $fontWeight: 500, $fontFamily: $futuraDemi);
+  text-transform: uppercase;
+}
+
+.futura-h2 {
+  @include h2;
+}
+
+.futura-p {
+  @include p;
+}
+
+.futura-pdemi {
+  @include p($fontSize: 14px, $fontFamily: $futuraDemi, $fontWeight: 500);
+}
+
+.futura-pdemi--title {
+  @include h1($fontSize: 80px, $lineHeight: 1.1, $fontWeight: 500, $fontFamily: $futuraDemi);
+  text-transform: initial;
+}
+
+
+.futura-pdemi--size16 {
+  @include p($fontSize: 16px, $fontFamily: $futuraDemi, $fontWeight: 500);
+}
+
+
+@include mq($breakpoints-mq--768) {
+  .futura-h1 {
+    font-size: 46px;
+    line-height: 42px;
+    font-family: $futuraDemi;
+  }
+  .futura-h1--small{
+    font-size: 46px;
+  }
+}

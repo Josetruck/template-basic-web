@@ -1,0 +1,35 @@
+//FOOTER
+
+.section-footer {
+  
+}
+
+@include mq($breakpoints-mq--1200) {
+    .section-footer {
+       
+    }
+}
+
+@include mq($breakpoints-mq--1024) {
+    .section-footer {
+
+    }
+}
+
+@include mq($breakpoints-mq--960) {
+    .section-footer {
+
+    }
+}
+
+@include mq($breakpoints-mq--768) {
+    .section-footer {
+
+    }
+}
+
+@include mq($breakpoints-mq--480) {
+    .section-footer {
+
+    }
+}
