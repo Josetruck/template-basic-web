@@ -27,7 +27,10 @@ main{
 }
 
 section{
-    overflow: hidden;
+    display: block;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 .container{
@@ -45,6 +48,7 @@ section{
 .container-fluid {
     display: block;
     width: 100%;
+    max-width: 100%;
 }
 
 .row{
@@ -54,8 +58,8 @@ section{
    width: 100%;
 }
 
-.all-width{
-    display: block;
-    max-width: 100%;
-    width: 100%;
+//RESET WORDPRESS
+
+.page{
+    margin: 0;
 }
